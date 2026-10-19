@@ -6,10 +6,6 @@ class Dashboard extends CI_Controller
 {
     public function index()
     {
-
-        $this->load->view('administrator/templates/header');
-        $this->load->view('administrator/templates/sidebar');
-        $this->load->view('administrator/dashboard');
-        $this->load->view('administrator/templates/footer');
+        echo "<h1>SELAMAT DATANG DI WEBSITE KAMI</h1>";
     }
 }
