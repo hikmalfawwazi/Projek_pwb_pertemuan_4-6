@@ -37,7 +37,7 @@
                                         <textarea name="deskripsi_kategori" id="deskripsi_kategori" cols="30" rows="10" class="form-control"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Tambah</button>
-                                    <a href="<?= base_url('admin/kategori') ?>" class="btn btn-danger">Kembali</a>
+                                    <a href="<?= base_url('administrator/kategori') ?>" class="btn btn-danger">Kembali</a>
                                 </form>
                             </p>
                         </div>

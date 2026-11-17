@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -52,7 +51,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-
 $route['admin'] = 'administrator/Admin_dashboard_controller/index';
 $route['admin/login'] = 'administrator/Admin_auth_controller/index';
 $route['admin/logout'] = 'administrator/Admin_auth_controller/logout';
@@ -69,3 +67,19 @@ $route['administrator/produk/tambah_produk'] = 'administrator/Produk_controller/
 $route['administrator/produk/ubah_produk/(:num)'] = 'administrator/Produk_controller/ubah_produk/$1';
 $route['administrator/produk/hapus/(:num)'] = 'administrator/Produk_controller/hapus_produk/$1';
 $route['administrator/produk/hapus_gambar_produk/(:num)/(:num)'] = 'administrator/Produk_controller/hapus_gambar_produk/$1/$2';
+
+#ongkir
+$route['administrator/Ongkir2422500019'] = 'administrator/Ongkir2422500019_controller/index';
+$route['administrator/Ongkir2422500019/tambah_ongkir'] = 'administrator/Ongkir2422500019_controller/tambah_ongkir';
+$route['administrator/Ongkir2422500019/hapus/(:num)'] = 'administrator/Ongkir2422500019_controller/hapus_ongkir/$1';
+$route['administrator/Ongkir2422500019/ubah_ongkir/(:num)'] = 'administrator/Ongkir2422500019_controller/ubah_ongkir/$1';
+
+#pelanggan
+$route['login'] = 'pelanggan_controller/login';
+$route['register'] = 'pelanggan_controller/register';
+$route['logout'] = 'pelanggan_controller/logout';
+$route['profil'] = 'pelanggan_controller/profil';
+
+#ecom
+$route['produk'] = 'produk_controller/detail';
+$route['produk/(:num)'] = 'produk_controller/detail/$1';
